@@ -1,0 +1,170 @@
+@import './font.css';
+@import './reset.css';
+@import './common.css';
+
+#skipNav{ position: absolute; }
+#skipNav a{ position: absolute; display: flex; align-items: center; justify-content: center; top: 0;left: 0; width: 150px; height: 50px; background: #000; color: #fff; transform: translateY(-100%); }
+#skipNav a:focus, #skipNav a:active{ transform: translateY(0); }
+
+.cursor,
+.cursor2,
+.cursor3{
+  position: fixed;
+  border-radius: 50%;	
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  left: -100px;
+  top: 50%;
+  transition: all .3s linear;
+}
+.cursor {
+  background-color: #fb0404;
+  z-index: 109;
+  height: 5px;
+  width: 5px;
+}
+.cursor2,
+.cursor3{
+  height: 50px;
+  width: 50px;
+  z-index: 108;
+  transition: all 0.3s ease-out;
+}
+.cursor2.hover,
+.cursor3.hover {
+  transform: scale(1.4) translateX(-35%) translateY(-35%);
+  border: none;
+  background: transparent;
+}
+
+.cursor2.hover {
+  background: rgba(255,255,255,0.3);
+}
+
+
+.ball {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  z-index: 100;
+  transition: all .3s linear;
+}
+
+
+/* 헤더 */
+body {
+    padding:0 24.4px;
+}
+header {
+    height: 68px;
+}
+.header-wrap {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15) ;
+    height: 68px;
+
+}
+.header-wrap .logo {
+    position: fixed;
+    top: 0;
+    font-size: 30px;
+    font-family: var(--ft-bm);
+    height: 68px;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
+.header-wrap .gnb {
+    margin-left: 600px;
+    font-size: 18px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    height: 68px;
+    color: #999;
+}
+.header-wrap .gnb a:hover {
+    color: #fff;
+}
+
+footer {}
+footer .footer-top{
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.15) ;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15) ;
+}
+footer .footer-top .left{
+    width: 55%;
+
+    padding: 15px 0;
+}
+footer .footer-top .left h2 {
+    font-size: 70px;
+    font-family: var(--ft-bm);
+    margin-bottom: 30px;
+}
+footer .footer-top .left span {
+    display: flex;
+    font-family: var(--ft-ml);
+    color: #999999;
+    text-transform: uppercase;
+    font-size: 13px;
+    align-items: center;
+    gap: 15px;
+}
+footer .footer-top .right{
+    padding: 15px;
+    border-left: 1px solid rgba(255, 255, 255, 0.15) ;
+    height: 500px;
+    position: relative;
+}
+footer .footer-top .right h2 {
+    position: absolute;
+    bottom: 0;
+    font-size: 74px;
+    font-family: var(--ft-bm);
+    white-space: nowrap;
+}
+footer .footer-top .right .contact-email {}
+footer .footer-top .right .contact-email span{
+    font-size: 20px;
+    font-family: var(--ft-ml);
+    color: #999999;
+}
+footer .footer-top .right .contact-email .address{
+    margin: 20px 0;
+    display: block;
+    font-size: 35px;
+}
+footer .footer-top .right .contact-sns{
+    margin-top: 60px;
+}
+footer .footer-top .right .contact-sns span{
+    font-size: 20px;
+    font-family: var(--ft-ml);
+    color: #999999;
+}
+footer .footer-top .right .contact-sns .sns-icon{
+    margin: 20px 0;
+    display: flex;
+    gap: 15px;
+}
+footer .footer-top .right .contact-sns .sns-icon .github{
+    width: 30px;height: 30px;
+    display: block;
+}
+footer .footer-top .right .contact-sns .sns-icon .velog{
+    width: 30px;height: 30px;
+    display: block;
+}
+footer .footer-bottom {
+    padding: 20px 0;
+}
+footer .footer-bottom small{
+    font-size: 13px;
+    font-family: var(--ft-ml);
+    color: #999999;
+    text-transform: uppercase;
+}

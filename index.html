@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- js -->
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+    <script src="https://unpkg.com/typeit"></script>
+    <script src="assets/js/main.js"></script>
+</head> 
+<body>
+    <div class='cursor' id="cursor"></div>
+    <div class='cursor2' id="cursor2">					
+      <div class="ball"></div>
+    </div>
+    <div class='cursor3' id="cursor3"></div>
+    
+    <div id="skipNav">
+        <a href="#content">본문내용바로가기</a>
+    </div>
+    <header class="header">
+        <div class="header-wrap">
+            <a href="./index.html" class="logo hover-target">
+                Yumi's Portfolio
+            </a>
+            <nav class="gnb">
+                <a href="#" class="hover-target">About</a>
+                <a href="#sc-work" class="hover-target">Work</a>
+                <a href="#footer" class="hover-target">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="sc-headline">
+            <div class="bg">
+                <h1 class="title-text">
+                    <!-- focused, positive, earnest-->
+                    A <em>Focused</em>
+                    <br>
+                    Publisher
+                </h1>
+            </div>
+            <h1 class="title-text">
+                <!-- focused, positive, earnest-->
+                A <em>Challenging</em>
+                <br>
+                Publisher
+            </h1>
+            <div class="info-text">
+                기본에 충실하되, 편의성과 시각적 즐거움까지 놓치지 않는 퍼블리셔가 되고 싶습니다.<br> 항상 배우는 자세로 임하겠습니다.
+            </div>
+        </section>
+        <section class="sc-preview">
+            <h2>Preview</h2>
+            <div class="img-container">
+                <img src="./assets/images/img1.png" alt="" id="pr-img">
+                <img src="./assets/images/img2.png" alt="" id="pr-img">
+                <img src="./assets/images/img3.png" alt="" id="pr-img">
+                <img src="./assets/images/img4.png" alt="" id="pr-img">
+            </div>
+        </section>
+        <section class="sc-work" id="sc-work">
+            <h2>Work</h2>
+
+            <div class="pf right">
+                <div class="img-container">
+                    <img src="./assets/images/img1.png" alt="포트폴리오1">
+                    <a href="" class="viewsite hover-target"><div class="go-btn">
+                        Go<svg style="vertical-align: middle;" width="100%" height="auto" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.5 5.36914L1 5.36914" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M6.20508 9.70724L10.5587 5.35362L6.20508 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                    </div></a>
+                </div>
+                <div class="textbox">
+                    <p class="keyword">
+                        적응형 • JQuery • GSAP
+                        <a href="" class="codereview hover-target">
+                            Code review
+                        </a>
+                    </p>
+                    <h3 class="pf-title">
+                        Medicube
+                    </h3>
+                </div>
+            </div>
+            <div class="pf left">
+                <div class="img-container">
+                    <img src="./assets/images/img2.png" alt="포트폴리오2">
+                    <a href="" class="viewsite hover-target"><div class="go-btn">
+                        Go<svg style="vertical-align: middle;" width="100%" height="auto" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.5 5.36914L1 5.36914" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M6.20508 9.70724L10.5587 5.35362L6.20508 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                    </div></a>
+                </div>
+                <div class="textbox">
+                    <p class="keyword">
+                        Mobile • JQuery • JSON • Swiper
+                        <a href="" class="codereview hover-target">
+                            Code review
+                        </a>
+                    </p>
+                    <h3 class="pf-title">
+                        Posty
+                    </h3>
+                </div>
+            </div>
+            <div class="pf right">
+                <div class="img-container">
+                    <img src="./assets/images/img3.png" alt="포트폴리오3">
+                    <a href="" class="viewsite hover-target"><div class="go-btn">
+                        Go<svg style="vertical-align: middle;" width="100%" height="auto" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.5 5.36914L1 5.36914" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M6.20508 9.70724L10.5587 5.35362L6.20508 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                    </div></a>
+                </div>
+                <div class="textbox">
+                    <p class="keyword">
+                        반응형 • JQuery • SCSS
+                        <a href="" class="codereview hover-target">
+                            Code review
+                        </a>
+                    </p>
+                    <h3 class="pf-title">
+                        Apple Watch Hermès
+                    </h3>
+                </div>
+            </div>
+            <div class="pf left">
+                <div class="img-container">
+                    <img src="./assets/images/img4.png" alt="포트폴리오4">
+                    <a href="" class="viewsite hover-target"><div class="go-btn">
+                        Go<svg style="vertical-align: middle;" width="100%" height="auto" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.5 5.36914L1 5.36914" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M6.20508 9.70724L10.5587 5.35362L6.20508 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                    </div></a>
+                </div>
+                <div class="textbox">
+                    <p class="keyword">
+                        적응형 • JQuery • Swiper
+                        <a href="" class="codereview hover-target">
+                            Code review
+                        </a>
+                    </p>
+                    <h3 class="pf-title">
+                        Seoul City Hall
+                    </h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="footer-top">
+            <div class="left">
+                <h2>Contact me</h2>
+                <span><svg style="vertical-align: middle;" width="115" height="19" viewBox="0 0 115 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.5 0L11.6329 6.56434H18.535L12.9511 10.6213L15.084 17.1857L9.5 13.1287L3.91604 17.1857L6.04892 10.6213L0.464963 6.56434H7.36712L9.5 0Z" fill="white"></path>
+                    <path d="M33.5 0L35.6329 6.56434H42.535L36.9511 10.6213L39.084 17.1857L33.5 13.1287L27.916 17.1857L30.0489 10.6213L24.465 6.56434H31.3671L33.5 0Z" fill="white"></path>
+                    <path d="M57.5 0L59.6329 6.56434H66.535L60.9511 10.6213L63.084 17.1857L57.5 13.1287L51.916 17.1857L54.0489 10.6213L48.465 6.56434H55.3671L57.5 0Z" fill="white"></path>
+                    <path d="M81.5 0L83.6329 6.56434H90.535L84.9511 10.6213L87.084 17.1857L81.5 13.1287L75.916 17.1857L78.0489 10.6213L72.465 6.56434H79.3671L81.5 0Z" fill="white"></path>
+                    <path d="M105.5 0L107.633 6.56434H114.535L108.951 10.6213L111.084 17.1857L105.5 13.1287L99.916 17.1857L102.049 10.6213L96.465 6.56434H103.367L105.5 0Z" fill="white"></path>
+                    </svg>
+                    I'll be waiting for your suggestion.
+                </span>
+            </div>
+            <div class="right">
+                <div class="contact-email">
+                    <span>E-mail</span>
+                    <a href="javascript:void(0);" class="address hover-target" data-clipboard-text="omgvic@naver.com">omgvic@naver.com</a>
+                </div>
+                <div class="contact-sns">
+                    <span>SNS</span>
+                    <div class="sns-icon">
+                        <a href="" class="github hover-target">
+                            <img src="./assets/images/github_white.png" alt="깃허브">
+                        </a>
+                        <a href="" class="velog hover-target">
+                            <img src="./assets/images/velog_white.png" alt="벨로그">
+                        </a>
+                    </div>
+                </div>
+                <h2>Publisher SeolYumi</h2>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <small>©2023 All rights reserved.</small>
+        </div>
+    </footer>
+</body>
+</html>
